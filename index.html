@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search Engine</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <section id="landing">
+        <nav>
+            <div class="nav_container">
+                <div class="row nav_row">
+                    <figure class="nav_image--wrapper">
+                        <img src="./assets/RT logo.png" class="nav_image" alt="">
+                    </figure>
+
+                    <ul class="nav_links">
+                        <li class="nav_link">
+                            <a href="" class="nav_social hover_effect">Home</a>
+                        </li>
+
+                        <li class="nav_link">
+                            <a href="" class="nav_social hover_effect">Search</a>
+                        </li>
+
+                        <li class="nav_link nav_link_contact">
+                            <a href="" class="nav_social nav_contact">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <header>
+            <div class="container header_container">
+                <div class="row header_row">
+                    <div class="header_description">
+
+                        <h1 class="header_title">
+                            <span class="purple"> World's most awarded movie search engine </span>
+                        </h1>
+
+                        <h2 class="header_subtitle">
+                            Find the perfect movie for you with <span class="purple ray">Ray's Film</span>
+                        </h2>
+
+
+                        <div class="search_bar_wrapper">
+                            <input type="text" class="search_bar" id="input" placeholder="Search by Title or Keywords">
+
+                            <div class="icons">
+
+                                <a class="magnifying_glass--wrapper" onclick="clickFunction()">
+                                    <img src="./assets/magnifying-glass-solid.svg" class="magnifying_glass" alt="">
+                                </a>
+
+                                <a  class="spinner--wrapper">
+                                    <img src="./assets/spinner-solid.svg" class="spinner" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </header>
+    </section>
+
+    <main>
+        <section id="movies">
+
+            <div class="welcome_page--image-container"> 
+                <figure class="welcome_page--image-wrapper">
+                    <img src="./assets/Movie Night-amico.svg" class="welcome_page--image" alt="">
+                </figure>
+            </div>
+
+
+            <div class="search_results">
+                <div class="container search_container">
+                    <div class="row">
+
+                        <div class="filter">
+                        <h2 class="filter_header">
+                            Search results:
+                        </h2>   
+
+                        <select name="sort" id="sort" class="filter_sort">
+                            <option value="" class="sort_text" disabled selected>SORT</option>
+                            <option value="NEW_TO_OLD">Release, descending</option>
+                            <option value="Old_TO_NEW">Release, ascending</option>
+                            <option value="HIGH_TO_LOW">Rating, descending</option>
+                            <option value="LOW_TO_HIGH">Rating, ascending</option>
+                        </select>
+                        </div>
+
+
+                    <div class="movie_wrapper">
+                        <div class="movie">
+                            <figure class="movie_poster--wrapper">
+                                <img src="./assets/The Batman.jpg" class="movie_poster" alt="">
+                                <div class="description_background"></div>
+                                <div class="plot_description">
+                                    <h3 class="plot_description--plot">
+                                        The Dark Knight of Gotham City begins his war on crime with his first major enemy
+                                        being Jack Napier, a criminal who becomes the clownishly homicidal Joker.
+                                    </h3>
+    
+                                    <h4 class="plot_description--genre">
+                                        Action, Adventure
+                                    </h4>
+    
+    
+                                    <h5 class="plot_description--awards">
+                                        Won 1 Oscar. 9 wins & 26 nominations total
+                                    </h5>
+    
+                                    <h6 class="plot_description--rating">
+                                        IMDB Rating: 8/10
+                                    </h6>
+    
+                                </div>
+                            </figure>
+
+                            
+
+                            <div class="movie_description">
+                                <h2 class="movie_title">
+                                    Transformers: Revenge of the fallen
+                                </h2>
+                                <h3 class="movie_year">
+                                    2016
+                                </h3>
+                                
+                            </div>
+                        </div>
+
+                        <div class="movie">
+                            <figure class="movie_poster--wrapper">
+                                <img src="./assets/The Batman.jpg" class="movie_poster" alt="">
+                                <div class="description_background"></div>
+                                <div class="plot_description">
+                                    <h3 class="plot_description--plot">
+                                        The Dark Knight of Gotham City begins his war on crime with his first major enemy
+                                        being Jack Napier, a criminal who becomes the clownishly homicidal Joker.
+                                    </h3>
+    
+                                    <h4 class="plot_description--genre">
+                                        Action, Adventure
+                                    </h4>
+    
+    
+                                    <h5 class="plot_description--awards">
+                                        Won 1 Oscar. 9 wins & 26 nominations total
+                                    </h5>
+    
+                                    <h6 class="plot_description--rating">
+                                        IMDB Rating: 8/10
+                                    </h6>
+    
+                                </div>
+                            </figure>
+
+                            
+
+                            <div class="movie_description">
+                                <h2 class="movie_title">
+                                    Transformers: Revenge of the fallen
+                                </h2>
+                                <h3 class="movie_year">
+                                    2016
+                                </h3>
+                                
+                            </div>
+                        </div>
+
+                        <div class="movie">
+                            <figure class="movie_poster--wrapper">
+                                <img src="./assets/The Batman.jpg" class="movie_poster" alt="">
+                                <div class="description_background"></div>
+                                <div class="plot_description">
+                                    <h3 class="plot_description--plot">
+                                        The Dark Knight of Gotham City begins his war on crime with his first major enemy
+                                        being Jack Napier, a criminal who becomes the clownishly homicidal Joker.
+                                    </h3>
+    
+                                    <h4 class="plot_description--genre">
+                                        Action, Adventure
+                                    </h4>
+    
+    
+                                    <h5 class="plot_description--awards">
+                                        Won 1 Oscar. 9 wins & 26 nominations total
+                                    </h5>
+    
+                                    <h6 class="plot_description--rating">
+                                        IMDB Rating: 8/10
+                                    </h6>
+    
+                                </div>
+                            </figure>
+
+                            
+
+                            <div class="movie_description">
+                                <h2 class="movie_title">
+                                    Transformers: Revenge of the fallen
+                                </h2>
+                                <h3 class="movie_year">
+                                    2016
+                                </h3>
+                                
+                            </div>
+                        </div>
+
+                        <div class="movie">
+                            <figure class="movie_poster--wrapper">
+                                <img src="./assets/The Batman.jpg" class="movie_poster" alt="">
+                                <div class="description_background"></div>
+                                <div class="plot_description">
+                                    <h3 class="plot_description--plot">
+                                        The Dark Knight of Gotham City begins his war on crime with his first major enemy
+                                        being Jack Napier, a criminal who becomes the clownishly homicidal Joker.
+                                    </h3>
+    
+                                    <h4 class="plot_description--genre">
+                                        Action, Adventure
+                                    </h4>
+    
+    
+                                    <h5 class="plot_description--awards">
+                                        Won 1 Oscar. 9 wins & 26 nominations total
+                                    </h5>
+    
+                                    <h6 class="plot_description--rating">
+                                        IMDB Rating: 8/10
+                                    </h6>
+    
+                                </div>
+                            </figure>
+
+                            
+
+                            <div class="movie_description">
+                                <h2 class="movie_title">
+                                    Transformers: Revenge of the fallen
+                                </h2>
+                                <h3 class="movie_year">
+                                    2016
+                                </h3>
+                                
+                            </div>
+                        </div>
+
+                        <div class="movie">
+                            <figure class="movie_poster--wrapper">
+                                <img src="./assets/The Batman.jpg" class="movie_poster" alt="">
+                                <div class="description_background"></div>
+                                <div class="plot_description">
+                                    <h3 class="plot_description--plot">
+                                        The Dark Knight of Gotham City begins his war on crime with his first major enemy
+                                        being Jack Napier, a criminal who becomes the clownishly homicidal Joker.
+                                    </h3>
+    
+                                    <h4 class="plot_description--genre">
+                                        Action, Adventure
+                                    </h4>
+    
+    
+                                    <h5 class="plot_description--awards">
+                                        Won 1 Oscar. 9 wins & 26 nominations total
+                                    </h5>
+    
+                                    <h6 class="plot_description--rating">
+                                        IMDB Rating: 8/10
+                                    </h6>
+    
+                                </div>
+                            </figure>
+
+                            
+
+                            <div class="movie_description">
+                                <h2 class="movie_title">
+                                    Transformers: Revenge of the fallen
+                                </h2>
+                                <h3 class="movie_year">
+                                    2016
+                                </h3>
+                                
+                            </div>
+                        </div>
+
+                        <div class="movie">
+                            <figure class="movie_poster--wrapper">
+                                <img src="./assets/The Batman.jpg" class="movie_poster" alt="">
+                                <div class="description_background"></div>
+                                <div class="plot_description">
+                                    <h3 class="plot_description--plot">
+                                        The Dark Knight of Gotham City begins his war on crime with his first major enemy
+                                        being Jack Napier, a criminal who becomes the clownishly homicidal Joker.
+                                    </h3>
+    
+                                    <h4 class="plot_description--genre">
+                                        Action, Adventure
+                                    </h4>
+    
+    
+                                    <h5 class="plot_description--awards">
+                                        Won 1 Oscar. 9 wins & 26 nominations total
+                                    </h5>
+    
+                                    <h6 class="plot_description--rating">
+                                        IMDB Rating: 8/10
+                                    </h6>
+    
+                                </div>
+                            </figure>
+
+                            
+
+                            <div class="movie_description">
+                                <h2 class="movie_title">
+                                    Transformers: Revenge of the fallen
+                                </h2>
+                                <h3 class="movie_year">
+                                    2016
+                                </h3>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="fault">
+            <div class="container fault_container">
+                <div class="row fault_wrapper">
+                    <figure class="fault_image--wrapper">
+                        <img src="./assets/undraw_not_found_h44f.svg" class="fault_image" alt="">
+                    </figure>
+
+                    <h2 class="fault_header">
+                        Could not find any matches related to your search. Please try again.
+                    </h2>
+                </div>
+            </div>
+        </section>
+        </section>
+    </main> 
+
+    </section>
+    </main>
+
+
+    <footer>
+        <div class="container">
+
+            <div class="row footer_row">
+
+                <figure class="footer_logo--wrapper">
+                    <img src="./assets/RT logo.png" class="footer_logo nav_image" alt="">
+                </figure>
+                <ul class="footer_links">
+                    <li class="footer_link">
+                        <a href="" class="footer_social hover_effect">About</a>
+                    </li>
+
+                    <li class="footer_link">
+                        <a href="" class="footer_social hover_effect">Terms of Use</a>
+                    </li>
+
+                    <li class="footer_link">
+                        <a href="" class="footer_social hover_effect">Privacy Policy</a>
+                    </li>
+
+                    <li class="footer_link">
+                        <a href="" class="footer_social hover_effect">Support</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
