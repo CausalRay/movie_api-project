@@ -7,6 +7,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
+
 .purple {
     color: #00c3ff;
     font-weight: 700;
@@ -61,8 +62,8 @@ li {
 /* Welcome page */
 .welcome_page--image-container {
     height: 100vh;
-    /* display: none !important; */
 }
+
 
 /* Spinner */
 .spinner {
@@ -70,13 +71,22 @@ li {
     animation: spinning 600ms infinite linear;
 }
 
-.load_spinner .spinner {
-    display: block;
+
+.display_none .spinner,
+.display_none .magnifying_glass {
+    display: none !important;
 }
+
+
+.display_block .spinner,
+.display_block .magnifying_glass {
+    display: block !important;
+}
+
 
 /* movie search result ONLY */
 .movie_wrapper { 
-    display: none !important;
+
     padding: 40px 12px 12px 12px;
     display: flex;
     flex-wrap: wrap;
@@ -87,24 +97,23 @@ li {
 
 /* Retry page */
 #fault {
-    display: none !important;
+
 }
 
+
 /* Filter */
-#sort {
-    display: none !important;
-}
+
 
 /* Search Header */
 
 .filter_header {
-    font-size: 30px;
+    font-size: 32px;
     word-spacing: 2px;
-    display: none !important;
+    width: 100%;
+    line-height: 2.5rem;
+    max-width: 500px;
+
 }
-
-
-
 
 
 
@@ -274,6 +283,10 @@ li {
 
 /* FILTER */ 
 
+.search_results {
+display: none;
+}
+
 .filter {
     display: flex;
     justify-content: space-between;
@@ -403,6 +416,10 @@ li {
 
 /* FAULT */
 
+#fault {
+    display: none;
+}
+
 .fault_container {
     padding-bottom: 30px;
 }
@@ -431,7 +448,21 @@ li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center
+    justify-content: center;
+    position: relative;
+}
+
+.fault_para {
+    font-size: 24px;
+    word-spacing: 2px;
+    position: absolute;
+    top: 9%;
+    left: 2%;
+    width: 100%;
+    line-height: 2.5rem;
+    max-width: 500px;
+
+
 }
 
 /* FOOTER */ 
@@ -439,6 +470,7 @@ li {
 footer {
     background-color: #ffffff0b ;
     margin-top: 20px;
+    padding-bottom: 50px;
 }
 
 .footer_row {
@@ -457,7 +489,7 @@ footer {
     display: flex;
     width: 100%;
     justify-content: space-around;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
 }
 
@@ -465,3 +497,8 @@ footer {
     color: white;
 }
 
+.copyright {
+    margin: 24px 0;
+    font-size: 16px;
+    margin-top: 30px;
+}
