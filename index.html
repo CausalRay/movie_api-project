@@ -93,12 +93,10 @@
 
                             </h2>
 
-                            <select name="sort" id="sort" class="filter_sort">
+                            <select name="sort" id="sort" class="filter_sort" onchange="filter_category(event)">
                                 <option value="" class="sort_text" disabled selected>SORT</option>
                                 <option value="NEW_TO_OLD">Release, descending</option>
-                                <option value="Old_TO_NEW">Release, ascending</option>
-                                <option value="HIGH_TO_LOW">Rating, descending</option>
-                                <option value="LOW_TO_HIGH">Rating, ascending</option>
+                                <option value="OLD_TO_NEW">Release, ascending</option>
                             </select>
                         </div>
 
@@ -106,6 +104,7 @@
 
 
                         </div>
+                        
                     </div>
                 </div>
             </div>
